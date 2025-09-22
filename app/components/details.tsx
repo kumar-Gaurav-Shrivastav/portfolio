@@ -14,7 +14,7 @@ import {
 
 export function Details() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto">
+    <BentoGrid className="max-w-5xl mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -22,7 +22,7 @@ export function Details() {
           description={item.description}
           header={item.header}
           icon={item.icon}
-          className={i === 0 || i === 5 ? "md:row-span-2 md:col-span-2 " : ""}
+          className={i === 0 || i === 4 ? "md:row-span-2 md:col-span-3" : "md:col-span-2"}
         />
       ))}
     </BentoGrid>
